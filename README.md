@@ -1,50 +1,101 @@
 # Delete AI Skill
 
-`Delete AI Skill` is a sellable Codex skill package for Chinese long-form writing that helps users:
+`Delete AI Skill` 是一套可售卖、可交付的中文写作 skill 工具包。
 
-- build a reusable personal writing style profile from real samples
-- generate or rewrite drafts with a more personal, less templated tone
-- run a lightweight QA pass for rhythm, specificity, and tone consistency
+它的目标不是“保证通过某个检测器”，而是帮助用户把 AI 草稿改得更像真人表达，把历史文章沉淀成可复用的个人风格资产，并形成稳定的写作工作流。
 
-This package is designed for self-media, blog, tutorial, and marketing content. It does not promise detector bypass results and should not be used for academic misconduct, legal documents, medical documents, or news reporting.
+适用场景：
 
-## What is included
+- 公众号长文
+- 小红书文案
+- 博客文章
+- 教程内容
+- 个人品牌写作
+- 内容团队协作
 
-- `SKILL.md`: core skill workflow
-- `references/`: reusable style and QA references
-- `scripts/extract_style_dna.py`: local style profile extractor
-- `examples/`: starter examples for demos and onboarding
-- `INSTALL.md`: buyer installation guide
-- `SELLING.md`: product positioning and sales copy guidance
+不适用场景：
 
-## Recommended use case
+- 学术论文
+- 法律文书
+- 医疗文书
+- 新闻报道
+- 任何需要承诺“必过检测”的场景
 
-This package is best sold as:
+## 仓库包含内容
 
-- personal style writing skill
-- low-AI-tone rewriting toolkit
-- author-style content workflow for self-media teams
+- `SKILL.md`
+  - 核心 skill 工作流，负责生成和改写
+- `scripts/extract_style_dna.py`
+  - 本地风格提取脚本，把样文转成 `style_dna.json`
+- `references/`
+  - 风格模板、场景模板、QA 清单
+- `examples/`
+  - 示例输入、示例输出、示例风格档案
+- `INSTALL.md`
+  - 安装与使用说明
+- `SELLING.md`
+  - 产品定位和售卖建议
+- `SALES_PAGE_CN.md`
+  - 中文销售页
+- `DEMO_SCRIPT_CN.md`
+  - 演示文案
+- `FAQ_CN.md`
+  - 买家常见问题
+- `DELIVERY_CHECKLIST_CN.md`
+  - 交付清单
 
-Avoid selling it as a guaranteed detector bypass product. A safer and more durable promise is:
+## 这套产品解决什么问题
 
-- stronger personal tone
-- less templated AI writing
-- better style consistency
-- faster rewriting workflow
+很多 AI 草稿的问题不是“写不出来”，而是：
 
-## Quick start
+- 太像模板
+- 句子太整齐
+- 有信息但没体温
+- 看起来完整，却不像作者本人会写的话
+- 团队多人协作时风格不统一
 
-1. Put the skill folder into a Codex skills directory or keep it as a reusable project package.
-2. Prepare `3-10` real writing samples from the target author.
-3. Run:
+`Delete AI Skill` 解决的重点是：
+
+- 让内容更像一个具体的人在写
+- 让旧文章变成可复用的风格资产
+- 让改写不再靠感觉，而是靠流程
+- 让团队围绕同一套风格标准协作
+
+## 推荐售卖定位
+
+这套产品更适合卖成：
+
+- 个人风格写作 skill
+- 低 AI 味改写工具包
+- 作者风格资产化工作流
+- 内容团队统一风格方案
+
+不建议卖成：
+
+- 保证通过某检测器
+- 100% 过检工具
+- 绕过平台识别产品
+
+更稳的销售承诺应该是：
+
+- 强化个人风格
+- 降低模板化痕迹
+- 提高自然度
+- 提升内容交付稳定性
+
+## 快速开始
+
+1. 准备 `3-10` 篇真实样文
+2. 运行风格提取脚本：
 
 ```powershell
 python .\scripts\extract_style_dna.py --input .\examples\input-sample-1.md --output .\examples\style_dna.generated.json
 ```
 
-4. Use the generated style DNA with the instructions in `SKILL.md`.
+3. 根据生成的 `style_dna.json`，配合 `SKILL.md` 进行写作或改写
+4. 用 `references/humanization-qa-checklist.md` 做最后 QA
 
-## Package structure
+## 目录结构
 
 ```text
 Delete AI Skill/
@@ -60,20 +111,24 @@ Delete AI Skill/
 `- examples/
 ```
 
-## Delivery notes
+## 交付优势
 
-This repo is intentionally simple for first-sale delivery:
+这套仓库按“第一版就能卖”来设计，特点是：
 
-- low setup cost
-- works offline for the style extraction step
-- easy to zip and send to buyers
-- easy to extend later into a plugin or web tool
+- 上手门槛低
+- 可直接打包交付
+- 可本地运行风格提取
+- 可继续升级成插件或网页工具
 
-## Chinese sales assets
+## 中文售卖素材入口
 
-For selling and onboarding in Chinese, use:
+如果你要直接拿这个仓库去卖，优先看这些文件：
 
 - `SALES_PAGE_CN.md`
 - `DEMO_SCRIPT_CN.md`
 - `FAQ_CN.md`
 - `DELIVERY_CHECKLIST_CN.md`
+
+## 一句话总结
+
+`Delete AI Skill` 卖的不是“骗过谁”，而是“让内容更像你自己，并且能稳定重复做出来”。
