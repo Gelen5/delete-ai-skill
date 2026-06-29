@@ -1,0 +1,74 @@
+{
+  "identity": {
+    "author_label": "sample_author",
+    "source_count": 1,
+    "sample_topic_range": "self-media writing",
+    "platform_bias": "WeChat"
+  },
+  "surface_style": {
+    "first_person_ratio": 0.02,
+    "second_person_ratio": 0.004,
+    "third_person_ratio": 0.0,
+    "sentence_length_average": 28.5,
+    "sentence_length_variance": 10.2,
+    "paragraph_length_pattern": "mixed",
+    "terminology_density": "low",
+    "colloquial_level": "medium"
+  },
+  "rhetorical_habits": {
+    "metaphor_density": "medium",
+    "rhetorical_question_density": "low",
+    "contrast_usage": "medium",
+    "parallelism_usage": "low",
+    "self_deprecation_usage": "low"
+  },
+  "emotional_curve": {
+    "emotional_baseline": "restrained",
+    "emotional_peak_pattern": "soft-rise",
+    "intensity_shift_style": "measured"
+  },
+  "structure": {
+    "opening_pattern": "judgment-first",
+    "progression_pattern": "problem-to-insight",
+    "ending_pattern": "gentle close",
+    "transition_style": "semantic"
+  },
+  "cognitive_pattern": {
+    "argument_mode": "inductive",
+    "abstraction_level": "medium",
+    "example_usage_style": "micro-scene",
+    "explanation_preference": "concrete-first"
+  },
+  "rhythm": {
+    "short_sentence_usage": 0.22,
+    "long_sentence_usage": 0.36,
+    "pause_pattern": "mixed",
+    "compression_vs_expansion": "mixed"
+  },
+  "reader_interaction": {
+    "direct_reader_address": 0.004,
+    "interaction_frequency": "low",
+    "intimacy_level": "medium"
+  },
+  "platform_fit": {
+    "line_break_style": "mixed",
+    "emoji_usage": "low",
+    "network_slang_usage": "low",
+    "headline_style": "plain-insight"
+  },
+  "guardrails": {
+    "banned_patterns": [
+      "stacked formal transitions",
+      "over-even paragraph rhythm"
+    ],
+    "overuse_warnings": [
+      "too much slang breaks credibility",
+      "too many metaphors make the text feel edited"
+    ],
+    "must_keep_features": [
+      "judgment with restraint",
+      "concrete image before abstract conclusion"
+    ]
+  },
+  "one_paragraph_summary": "The writer prefers a restrained first-person tone, medium colloquial phrasing, visible sentence-length variation, and concrete images before abstract takeaways."
+}
