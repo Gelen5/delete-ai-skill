@@ -3,3 +3,8 @@ __pycache__/
 *.pyo
 *.pyd
 *.generated.json
+examples/account-name.txt
+examples/wechat-discovery.json
+examples/wechat-discovery.csv
+examples/wechat-discovery.md
+examples/style_dna.from-folder.json

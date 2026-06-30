@@ -29,6 +29,18 @@ This package is designed to be easy for non-technical buyers to use.
 python .\scripts\extract_style_dna.py --input .\examples\input-sample-1.md --output .\examples\style_dna.generated.json
 ```
 
+## WeChat account workflow
+
+If the buyer only has a WeChat public-account name, use this flow:
+
+1. discover article candidates with `scripts/discover_wechat_articles.py`
+2. extract article text with `scripts/extract_wechat_article.py`
+3. build one style DNA file from the exported article folder with `scripts/build_style_dna_from_folder.py`
+
+Detailed steps:
+
+- `references/wechat-sample-import-workflow.md`
+
 ## Recommended buyer workflow
 
 1. collect `3-10` real articles written by the target author

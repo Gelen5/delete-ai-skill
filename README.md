@@ -95,6 +95,25 @@ python .\scripts\extract_style_dna.py --input .\examples\input-sample-1.md --out
 3. 根据生成的 `style_dna.json`，配合 `SKILL.md` 进行写作或改写
 4. 用 `references/humanization-qa-checklist.md` 做最后 QA
 
+## 微信公众号样文导入
+
+如果你只有“公众号名称”，没有现成样文，现在也可以走这个流程：
+
+1. 输入公众号名称，发现相关文章列表
+2. 自动解析最终微信文章链接
+3. 直抓正文，或在遇到验证时导入浏览器保存的 HTML
+4. 批量生成该公众号的 `style_dna.json`
+
+工作流说明见：
+
+- `references/wechat-sample-import-workflow.md`
+
+核心脚本：
+
+- `scripts/discover_wechat_articles.py`
+- `scripts/extract_wechat_article.py`
+- `scripts/build_style_dna_from_folder.py`
+
 ## 目录结构
 
 ```text

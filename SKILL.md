@@ -34,6 +34,8 @@ Collect these before writing:
 - sample articles from the target author, if available
 - style DNA file, if available
 
+If the user wants to learn from a WeChat public account, use the workflow in `references/wechat-sample-import-workflow.md` first.
+
 ## Workflow
 
 ### Step 1: Confirm the writing target
@@ -55,6 +57,13 @@ If the user provides real samples:
 If the user does not provide samples:
 
 - use a scenario template from `references/scenario-templates.md`
+
+If the user gives only a WeChat public-account name:
+
+- discover public article results with `scripts/discover_wechat_articles.py`
+- resolve final article URLs
+- extract article text with `scripts/extract_wechat_article.py`
+- build style DNA from the exported article folder with `scripts/build_style_dna_from_folder.py`
 
 Read the style structure in `references/style-dna-template.md`.
 
