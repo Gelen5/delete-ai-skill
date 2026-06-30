@@ -31,15 +31,16 @@ python .\scripts\extract_style_dna.py --input .\examples\input-sample-1.md --out
 
 ## WeChat account workflow
 
-If the buyer only has a WeChat public-account name, use this flow:
+The current public-account import path uses `wechat-article-exporter` as the upstream source.
 
-1. discover article candidates with `scripts/discover_wechat_articles.py`
-2. extract article text with `scripts/extract_wechat_article.py`
-3. build one style DNA file from the exported article folder with `scripts/build_style_dna_from_folder.py`
+Use:
+
+1. `scripts/import_from_wechat_article_exporter.py`
+2. `scripts/build_style_dna_from_folder.py`
 
 Detailed steps:
 
-- `references/wechat-sample-import-workflow.md`
+- `references/wechat-article-exporter-adapter.md`
 
 ## Recommended buyer workflow
 

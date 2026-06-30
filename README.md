@@ -97,21 +97,22 @@ python .\scripts\extract_style_dna.py --input .\examples\input-sample-1.md --out
 
 ## 微信公众号样文导入
 
-如果你只有“公众号名称”，没有现成样文，现在也可以走这个流程：
+当前仓库对外采用 `wechat-article-exporter` 适配器方案。
 
-1. 输入公众号名称，发现相关文章列表
-2. 自动解析最终微信文章链接
-3. 直抓正文，或在遇到验证时导入浏览器保存的 HTML
-4. 批量生成该公众号的 `style_dna.json`
+也就是：
+
+1. 通过 `wechat-article-exporter` 按公众号名称查询
+2. 拉取历史文章列表
+3. 直接导出 markdown
+4. 生成该公众号的 `style_dna.json`
 
 工作流说明见：
 
-- `references/wechat-sample-import-workflow.md`
+- `references/wechat-article-exporter-adapter.md`
 
 核心脚本：
 
-- `scripts/discover_wechat_articles.py`
-- `scripts/extract_wechat_article.py`
+- `scripts/import_from_wechat_article_exporter.py`
 - `scripts/build_style_dna_from_folder.py`
 
 ## 目录结构
