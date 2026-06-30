@@ -115,6 +115,10 @@ python .\scripts\extract_style_dna.py --input .\examples\input-sample-1.md --out
 - `scripts/import_from_wechat_article_exporter.py`
 - `scripts/build_style_dna_from_folder.py`
 
+买家照抄版命令说明：
+
+- `BUYER_QUICKSTART_CN.md`
+
 ## 目录结构
 
 ```text

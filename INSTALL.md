@@ -41,6 +41,7 @@ Use:
 Detailed steps:
 
 - `references/wechat-article-exporter-adapter.md`
+- `BUYER_QUICKSTART_CN.md`
 
 ## Recommended buyer workflow
 
