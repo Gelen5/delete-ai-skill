@@ -8,3 +8,4 @@ examples/wechat-discovery.json
 examples/wechat-discovery.csv
 examples/wechat-discovery.md
 examples/style_dna.from-folder.json
+scripts/__pycache__/

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete AI Skill Exporter</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Delete AI Skill</p>
+        <h1>公众号文章导出器</h1>
+        <p class="sub">
+          输入公众号名称，拉文章列表，批量导出 Markdown，并顺手生成一份
+          <code>style_dna.json</code>。
+        </p>
+      </section>
+
+      <section class="panel">
+        <div class="grid two">
+          <label>
+            <span>Exporter 地址</span>
+            <input id="baseUrl" value="https://down.mptext.top" />
+          </label>
+          <label>
+            <span>Auth Key</span>
+            <input id="authKey" placeholder="从 wechat-article-exporter 站点获取" />
+          </label>
+        </div>
+
+        <div class="grid two">
+          <label>
+            <span>公众号名称</span>
+            <input id="accountName" placeholder="例如：丁香医生" />
+          </label>
+          <label>
+            <span>文章关键词，可选</span>
+            <input id="keyword" placeholder="例如：AI" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="searchBtn">1. 搜公众号</button>
+          <button id="loadBtn" disabled>2. 拉文章</button>
+          <button id="exportBtn" disabled>3. 导出 ZIP</button>
+        </div>
+
+        <p class="hint">
+          说明：这个网页依赖上游 <code>wechat-article-exporter</code> 的登录态。最大的卡点不是导出，而是
+          <code>auth-key</code> 是否有效。
+        </p>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>搜索结果</h2>
+          <p id="selectedText">还没有选择公众号</p>
+        </div>
+        <div id="accountList" class="list empty">请先搜索公众号</div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>文章列表</h2>
+          <p id="articleCount">已选 0 篇</p>
+        </div>
+        <div class="toolbar">
+          <button id="selectAllBtn" disabled>全选</button>
+          <button id="clearAllBtn" disabled>清空选择</button>
+        </div>
+        <div id="articleList" class="list empty">请先加载文章</div>
+      </section>
+
+      <section class="panel">
+        <h2>状态</h2>
+        <pre id="statusBox" class="status">准备就绪</pre>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+  </html>

@@ -43,6 +43,20 @@ Detailed steps:
 - `references/wechat-article-exporter-adapter.md`
 - `BUYER_QUICKSTART_CN.md`
 
+## Local web UI
+
+To run the local article exporter page:
+
+```powershell
+python .\scripts\start_exporter_web.py
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8765
+```
+
 ## Recommended buyer workflow
 
 1. collect `3-10` real articles written by the target author
